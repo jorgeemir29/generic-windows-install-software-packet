@@ -1,0 +1,10 @@
+# tasks file for generic-windows-install-software-packet
+---
+# Import tasks from windows.yml
+    - name: Importing tasks for Windows Host Behing Proxy ...
+      import_tasks: windows-behind-proxy.yaml
+      when: ansible_os_family == "Windows" and USE_PROXY == True
+
+    - name: Importing Task for Windows Host...
+      import_tasks: windows.yaml
+      when: ansible_os_family == "Windows"
