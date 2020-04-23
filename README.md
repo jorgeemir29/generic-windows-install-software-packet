@@ -14,7 +14,7 @@ Role Variables
 --------------
 
 * {{REMOTE_SOURCE_PACKET_INSTALLER}} - This is variable used to define the remote location to get installer (MSI/EXE) .
-* {{PACKET_NAME}} - This variable is used to define packet name and used by the rol to create control-flags and facts.
+* {{PACKET_NAME}} - This variable is used to define packet name and used by the role to create control-flags and facts.
 * {{USE_PROXY}} - This variable is used to force deployment using a coorporate proxy, by default proxy is disabled (Allowed values: true | false).
 * {{HTTP_PROXY}} - The full path for http proxy (Example: http://my-overwrite-proxy-server-here.unsecure-world.com:3128
 * {{PACKET_INSTALLER_PID}} - This is the product id you want to setup when installing the packet.
